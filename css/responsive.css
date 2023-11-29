@@ -1,0 +1,179 @@
+@media (max-width: 575.98px){
+    /* =================menu part================== */
+    .align-items-center {
+        align-items: start !important;
+    }
+    .border-bottom {
+        border-bottom: 3px solid #1A5D1A !important;
+    }
+    .banner_image {
+        width: 100%;
+    }
+    .banner_button {
+        gap: 20px;
+        margin-right: 0;
+    }
+
+    .banner_button_icon {
+        gap: 5px;
+        margin: 30px 0 0;
+    }
+    .banner_social_media {
+        gap: 5px;
+    }
+    .banner_button_call a .banner_icon_img {
+        width: 35px;
+        height: 35px;
+    }
+    .banner_button_call a {
+        height: 35px;
+        width: 35px;
+    }
+    .banner_button_call a span {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .banner_button_call a:hover {
+        width: 152px;
+        height: 35px;
+    }
+    .offer p {
+        right: 26px;
+    }
+    .specials_dishes_head h2 {
+        font-size: 25px;
+    }
+    .specials_dishes_item {
+        width: 300px;
+        /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 10px;
+    }
+    .specials_dishes_img img{
+        width: 100%;
+    }
+    .view_more a {
+        margin: 36px 0 0 150px;
+    }
+    .menu_head h2 {
+        font-size: 25px;
+    }
+    .menu_card_list {
+        width: 190px;
+        padding: 21px 0px 40px;
+    }
+    .menu_card_list .menu_card_head h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu_card_list .menu_card_head h4::after {
+        width: 125px
+    }
+    .menu_card_food_head h6 {
+        font-size: 10px;
+    }
+    .food_item p {
+        width: 107px;
+        font-size: 7px;
+    }
+    .food_item p::after {
+        width: 100%;
+    }
+    .food_rate h5 {
+        font-size: 12px;
+    }
+    .prev_arrow {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .next_arrow {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .menu_card_img {
+        width: 130px;
+    }
+    .menu_card_img img{
+        width: 130px !important;
+        height: 380px;
+    }
+    .menu_card_item {
+        gap: 5px;
+    }
+    .food_gallery_head h3 {
+        font-size: 16px;
+    }
+    .food_gallery_head h2 {
+        font-size: 25px;
+    }
+    .nav-tabs .nav-link {
+        width: 125px;
+        height: 40px;
+        margin-right: 5px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .food_item_card {
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .about_head h3 {
+        font-size: 16px;
+    }
+    .about_head h2 {
+        font-size: 20px;
+    }
+    .about_head p {
+        width: 315px;
+        font-size: 12px;
+    }
+    .about_text ul li p {
+        font-size: 14px;
+    }
+    .about_img {
+        width: 300px;
+        margin-left: 0;
+    }
+    .about_button_img {
+        width: 300px;
+        margin: 34px 0px 44px;
+    }
+    .about_button a {
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+    }
+    .haappy_client_head h2 {
+        font-size: 30px;
+    }
+    .happy_client_list {
+        margin-left: 0;
+    }
+    .our_team_head h2 {
+        font-size: 30px;
+    }
+    .our_team_member {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .membar_img::after {
+        width: 225px;
+    }
+    .footer_contract ul li a {
+        width: 332px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: var(--Roboto);
+        color: #fff;
+        margin-bottom: 17px;
+    }
+    .location_img a {
+        width: 277px;
+    }
+    .copy p {
+        font-size: 9px;
+        font-weight: 400;
+    }
+}

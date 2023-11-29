@@ -1,0 +1,1113 @@
+/* ======================= common css start ============================ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ----------------------- common css end ------------------------------ */
+/* ======================= common css start ============================ */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ol,ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p,a,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+/* ----------------------- common css end ------------------------------ */
+/* ======================= root css start ============================ */
+:root{
+    --Roboto:'Roboto', sans-serif;
+    --band_color:#1A5D1A;
+}
+/* ----------------------- root css end ------------------------------ */
+/* ======================= menu css start ============================ */
+.main_menu{
+    width: 100%;
+    height: 80px;
+    background: #FFF8EE;
+}
+.menu_fixed{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all linear 0.4s;
+}
+.main_menu ul{
+    gap: 30px;
+}
+.main_menu ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #000 !important;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+
+}
+.main_menu ul li a:hover{
+    color: var(--band_color) !important;
+}
+.main_menu ul li a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--band_color);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    transform: scalex(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: center;
+    z-index: -1;
+}
+.main_menu ul li a:hover::after{
+    transform: scalex(1);
+}
+.menu_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+}
+.main_menu .menu_button a{
+    height: 50px;
+    width: 150px;
+    background: var(--band_color);
+    border: 3px solid var(--band_color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+}
+.menu_button a:hover{
+    color: var(--band_color);
+}
+.menu_button a::after{
+    content: '';
+    background: #FFF8EE;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scalex(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: center;
+    z-index: -1;
+}
+.menu_button a:hover::after{
+    transform: scalex(1);
+}
+.menu_button .menu_loggin{
+    width: 110px !important;
+}
+/* ----------------------- menu css end ------------------------------ */
+/* ======================= banner css start ============================ */
+#banner{
+    width: 100%;
+    background: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 40px;
+}
+.banner_image{
+    width: 424px;
+    margin: 0 auto;
+}
+.banner_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-right: 50px;
+}
+.banner_button_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+    margin: 30px 0;
+}
+.banner_button a {
+    height: 60px;
+    width: 60px;
+    background: #D9D9D9;
+    border-radius: 50px;
+    border: 1px solid #D9D9D9;
+    overflow: hidden;
+    transition: all linear 0.3s;
+}
+
+.banner_button a:hover {
+    width: 244px;
+    height: 60px;
+}
+
+.banner_button a .banner_button_img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    padding: 15px;
+    border: 1px solid #D9D9D9;
+    background: #D9D9D9;
+}
+
+.banner_button a span {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #000;
+    text-transform: capitalize;
+}
+.banner_button_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    margin: 30px 0 0 95px;
+}
+.banner_button_call a {
+    height: 40px;
+    width: 40px;
+    background: #D9D9D9;
+    border-radius: 50px;
+    border: 1px solid #D9D9D9;
+    overflow: hidden;
+    transition: all linear 0.3s;
+}
+
+.banner_button_call a:hover {
+    width: 244px;
+    height: 40px;
+}
+
+.banner_button_call a .banner_icon_img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #D9D9D9;
+    background: #D9D9D9;
+}
+
+.banner_button_call a span {
+    font-size: 18px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    margin-left: 16px;
+}
+.banner_social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.social_media_icon{
+    height: 35px; 
+    width: 35px;
+}
+/* ----------------------- banner css end ------------------------------ */
+/* ======================= offer Dishes css start ============================ */
+#offer_dishes{
+    width: 100%;
+    background: url(../image/Rectangle\ 10.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 58px 0 72px;
+}
+.offer_dishes_head h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    text-align: center;
+}
+.offer_dishes_head h2{
+    font-size: 35px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: var(--band_color) ;
+    text-align: center; 
+    text-transform: uppercase;
+    margin: 4px 0 22px;
+}
+.offer_dishes_item{
+    width: 281px;
+    height: 281px;
+    padding-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.offer_dishes_img{
+    width: 250px;
+    border-radius: 15px;
+}
+.offer p{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    font-family:var(--Roboto)  ;
+    color:#DD0606;
+    padding: 14px;
+    text-align: center;
+    text-decoration: underline;
+    position: absolute;
+    top: 0px;
+    right: 55px;
+    z-index: 999;
+}
+.slick-dotted ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.slick-dotted ul li button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--band_color);
+    background: transparent;
+    font-size: 0;
+    overflow: hidden;
+}
+.slick-dotted ul .slick-active button{
+    background: var(--band_color);
+}
+/* ----------------------- offer Dishes css end ------------------------------ */
+/* ======================= SPECIALS Dishes css start ============================ */
+#specials_dishes{
+    width: 100%;
+    background: url(../image/Rectangle\ 11.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 115px 0 51px;
+}
+.specials_dishes_head h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: var(--band_color);
+    text-align: center;
+    margin-bottom: 16px;
+}
+.specials_dishes_item{
+    width: 350px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.specials_dishes_item_head h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: var(--band_color);
+    text-align: center;
+    margin: 16px 0 8px;
+}
+.specials_dishes_item_head p{
+    width: 170px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Roboto);
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 auto;
+}
+.order_button a{
+    width: 120px;
+    height: 30px;
+    background: var(--band_color);
+    border: 2px solid var(--band_color);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #fff;
+    margin: 16px 17px 10px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+}
+.order_button a:hover{
+    color: var(--band_color);
+}
+.order_button a::after{
+    content: '';
+    background: #FFF8EE;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scalex(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: left;
+    z-index: -1;
+}
+.order_button a:hover::after{
+    transform: scalex(1);
+}
+.view_more a{
+    width: 150px;
+    height: 40px;
+    background: var(--band_color);
+    border: 1px solid var(--band_color);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #fff;
+    text-transform: capitalize;
+    margin: 36px 0 0 200px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+}
+.view_more a:hover{
+    color: var(--band_color);
+}
+.view_more a::after{
+    content: '';
+    background: #FFF8EE;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scalex(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: right;
+    z-index: -1;
+}
+.view_more a:hover::after{
+    transform: scalex(1);
+}
+/* ----------------------- SPECIALS Dishes css end ------------------------------ */
+/* ======================= menu css start ============================ */
+#menu{
+    width: 100%;
+    background: url(../image/Rectangle\ 15.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0 51px;
+}
+.menu_head h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    text-align: center;
+}
+.menu_head h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: var(--band_color) ;
+    text-align: center; 
+    text-transform: uppercase;
+    margin: 4px 0 31px;
+}
+.menu_card_item{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 103px;
+}
+
+.menu_card_list{
+    width: 486px;
+    padding: 21px 16px 40px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background: rgba(217, 217, 217, 0.5);
+}
+.menu_card_list .menu_card_head h4{
+    font-size: 30px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: var(--band_color) ;
+    text-transform: uppercase;
+    text-align: center; 
+    position: relative;
+}
+.menu_card_list .menu_card_head h4::after{
+    content: '';
+    width: 200px;
+    height: 2px;
+    background: var(--band_color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu_card_list_item ul{
+    list-style: disc;
+    margin-left: 25px;
+}
+.menu_card_food_head h6{
+    font-size: 20px;
+    font-weight: 600;
+    font-family:var(--Roboto)  ;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+.menu_card_food_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.food_item p{
+    width: 336px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family:var(--Roboto)  ;
+    color: var(--band_color) ;
+    text-transform: uppercase;
+    position: relative;
+}
+.food_item p::after{
+    content: '';
+    width: 370px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.food_rate h5{
+    font-size: 18px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    text-transform: uppercase;
+}
+.menu_card_img{
+    width: 304px;
+}
+.prev_arrow{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    background: #D9D9D9;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    z-index: 998;
+}
+.next_arrow{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    background: #D9D9D9;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:0px;
+    z-index: 998;
+}
+/* ----------------------- menu css end ------------------------------ */
+/* ======================= common css start ============================ */
+#food_gallery{
+    background: #FFF8EE;
+    padding: 61px 0 70PX;
+}
+.food_gallery_head h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    text-align: center;
+}
+.food_gallery_head h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    text-align: center; 
+    text-transform: uppercase;
+    margin: 8px 0 26px;
+}
+.nav-tabs .nav-link {
+    width: 160px;
+    height: 50px;
+    background: var(--band_color);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-right: 27px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #fff ;
+    text-transform: capitalize;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--band_color);
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.nav-tabs {
+    --bs-nav-tabs-border-width: none;
+    --bs-nav-tabs-border-color: none;
+    --bs-nav-tabs-border-radius: none;
+    --bs-nav-tabs-link-hover-border-color:none;
+    --bs-nav-tabs-link-active-color: none;
+    --bs-nav-tabs-link-active-bg: none;
+    --bs-nav-tabs-link-active-border-color: none;
+    border-bottom: none;
+    justify-content: center;
+    align-items: center;
+}
+.food_item_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 39px;
+}
+.food_item_card{
+    width: 330px;
+    background: #fff;
+    padding: 25px 40px 14px 35px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: all linear 0.3S;
+}
+.food_item_card:hover{
+    background: #FFF8EE;
+}
+.food_item_card_img{
+    width: 205px;
+    margin: 0 auto;
+}
+.food_item_card_head h4{
+    width: 232px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: var(--band_color) ;
+    text-transform: capitalize;
+    margin: 20px 30px 20px 0;
+    text-align: center;
+}
+.food_item_card_head p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family:var(--Roboto)  ;
+    color: #000;
+}
+.food_item_card_botton a{
+    width: 130px;
+    height: 30px;
+    background: var(--band_color);
+    border: 1px solid var(--band_color);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 11px;
+}
+.food_card_icon a{
+    width: 32px;
+    height: 32px;
+    font-size: 30px;
+    color: #000;
+    margin:0 0 0 230px ;
+}
+/* ----------------------- common css end ------------------------------ */
+/* ======================= about css start ============================ */
+#about{
+    padding-top: 56px;
+    padding-bottom: 20px;
+    background: #ffff;
+}
+.about_head h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #000;
+}
+.about_head h2{
+    font-size:35px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: var(--band_color);
+    margin: 11px 0;
+}
+.about_head p{
+    width: 493px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Roboto);
+    color: #2A435D;
+    text-transform: capitalize;
+    margin-bottom: 29px;
+}
+.about_head p span{
+    display: block;
+}
+.about_text ul{
+    list-style: disc;
+    color: #2A435D;
+    margin-left: 42px;
+}
+.about_text ul li p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--Roboto);
+    color: #2A435D;
+    margin-bottom: 30px;
+}
+.about_img{
+    width: 500px;
+    border-radius: 20px;
+    margin-left: 42px;
+}
+.about_button_img{
+    width: 380px;
+    border-radius: 20px;
+    margin: 34px 31px 44px;
+}
+.about_button a{
+    width: 257px;
+    height: 50px;
+    background: var(--band_color);
+    border: 1px solid var(--band_color);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 96px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+}
+.about_button a:hover{
+    color: var(--band_color);
+}
+.about_button a::after{
+    content: '';
+    background: #FFF8EE;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scalex(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: center;
+    z-index: -1;
+}
+.about_button a:hover::after{
+    transform: scalex(1);
+}
+/* ----------------------- about css end ------------------------------ */
+/* ======================= haappy client css start ============================ */
+#haappy_client{
+    padding: 60px 0 78px;
+}
+.haappy_client_head h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: var(--band_color);
+    text-transform: capitalize;
+    text-align: center;
+}
+.happy_client_list{
+    width: 300px;
+    background: #FFF8EE;
+    border: 1px solid #D9D9D9;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 25px 7px 11px 23px;
+    margin-left: 40px;
+    margin-top: 49px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all linear 0.3s;
+}
+.happy_client_list:hover{
+    background: #fff;
+}
+.clint_img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.client_name h3{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 13px 0 16px;
+}
+.clint_comment p{
+    width: 255px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--Roboto);
+    color: #000;
+    text-transform: capitalize;
+}
+.client_rating ul{
+    display: flex;
+    align-items: center;
+}
+.client_rating ul li a{
+    color: #FF7C04;
+    margin-top: 38px;
+    
+}
+.client_love_rating{
+    display: flex;
+    justify-content: end;
+}
+.client_love a{
+    width: 32px;
+    height: 32px;
+}
+.ratting p{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #000;
+}
+.list2{
+    margin-left: 20px;
+}
+.list3{
+    margin-left: 0;
+   margin-right: 40px; 
+}
+/* ----------------------- haappy client css end ------------------------------ */
+/* ======================= our_team css start ============================ */
+#our_team{
+    padding: 66px 0 80px;
+}
+.our_team_head h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #000;
+    text-align: center;
+}
+.our_team_head h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: var(--band_color);
+    text-align: center;
+    margin-bottom: 19px;
+}
+.our_team_member{
+    width: 341px;
+    border: 1px solid #D9D9D9;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    padding: 16px 42px 46px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    z-index: 1;
+}
+.our_team_member::after{
+    content: '';
+    background: var(--band_color);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: center;
+    z-index: -1;
+}
+.our_team_member:hover::after{
+    transform: scaleY(1);
+}
+.membar_img{
+    position: relative;
+}
+.membar_img::after{
+    content: '';
+    width: 258px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all linear 0.3s;
+}
+.our_team_member:hover .membar_img::after{
+    background: #FF7C04;
+}
+.member_name h4{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: var(--band_color);
+    text-transform: capitalize;
+    margin: 10px 0;
+    transition: all linear 0.3s;
+}
+.our_team_member:hover .member_name h4{
+    color: #fff;
+}
+.member_name p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Roboto);
+    color: #000;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+}
+.our_team_member:hover .member_name p{
+    color: #fff;
+}
+/* ----------------------- our_team css end ------------------------------ */
+/* ======================= common css start ============================ */
+#footer{
+    padding: 66px 0 36px;
+    background: var(--band_color);
+}
+.footer_logo{
+    width: 250px;
+}
+.footer_text p{
+    width: 283px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Roboto);
+    color: #fff;
+    margin-bottom: 37px;
+}
+.footer_contract ul li a span{
+    width: 40px !important;
+    display: inline-block;
+    margin-right: 19px;
+}
+.footer_contract ul li a{
+    width: 332px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--Roboto);
+    color: #fff;
+    margin-bottom: 17px;
+}
+.footer_contract ul li a .numer{
+    display: block;
+    margin-left: 59px;
+}
+.footer_icon ul{
+    display: flex;
+    gap: 35px;
+    margin-top: 37px;
+}
+.footer_icon ul li a {
+    width: 40px;
+}
+.facebook_head h5{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--Roboto);
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 44px;
+    position: relative;
+}
+.facebook_head h5::after{
+    content: '';
+    width: 163px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.facebook_food ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 26px 0 0 10px;
+}
+.facebook_food ul li{
+    width: 133px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.fb_button a{
+    width: 150px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--Roboto);
+    color: #000;
+    text-transform: capitalize;
+    margin: 28px 75px;
+    position: relative;
+    z-index: 1;
+    transition: all linear 0.3s;
+}
+
+.fb_button a:hover{
+    color: #fff;
+}
+.fb_button a::after{
+    content: '';
+    background: var(--band_color);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scalex(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: right;
+    z-index: -1;
+}
+.fb_button a:hover::after{
+    transform: scalex(1);
+}
+
+.location h6{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--Roboto);
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 44px;
+    position: relative;
+}
+.location h6 span{
+    color: #DD0606;
+}
+.location h6::after{
+    content: '';
+    width: 163px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.location_img a{
+    width: 351px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 31px;
+    margin-left: 8px;
+}
+.back_to_top a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--band_color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+#copyright{
+    padding: 32px;
+    background: #FFF8EE;
+}
+.copy p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--Roboto);
+    color: #000;
+    text-align: center;
+}
+
+/* ----------------------- common css end ------------------------------ */
